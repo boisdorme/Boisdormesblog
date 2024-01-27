@@ -18,28 +18,39 @@
 
 <style type="text/css">
 
+
+@font-face {
+  font-family: "OldNewspaperTypes";
+  src:
+    local("OldNewspaperTypes"),
+    url("OldNewspaperTypes.ttf") format("truetype");
+}
+
 body {
 
-font-size: 19px;
+font-size: 20px;
 font-weight: normal;
 font-style: normal;
 overflow: auto;
 text-align: justify;
-margin: 5% 0;
+margin: 1% 0;
 
 
 }
 
 body, p, .warning, .inlinewarning {
 
-font-family: "Souvenir Lt Bt", Andika, "Amerigo BT", Century, "Bookman URW", "Bitstream Vera Serif", "Free Sans", Georgia, Serif, Aerial, "Times New Roman", "STSong", "PT Serif";
+font-family: "OldNewspaperTypes", Cambria, Tinos, "Souvenir Lt Bt", Andika, "Amerigo BT", Century, "Bookman URW", "Bitstream Vera Serif", "Free Sans", Georgia, Serif, Aerial, "Times New Roman", "STSong", "PT Serif";
 line-height: 120%;
 }
 
 p {
 margin : 0 20%;
-text-indent: 5em;
+margin-bottom: 5px;
+text-indent: 0em;
 text-align: justify;
+column-count: 2;
+column-gap: 40px;
 }
 
 sub, sup {
@@ -47,33 +58,35 @@ font-size: 70%;
 }
 
 h1, h2, h3, h4, h5, h6, .title {
-font-family: OpenDyslexic, "Lucida Sans", "Bitstream Vera Sans", "Arial Rounded MT Bold", Arbeka, "Lucida Grande", "Lucida Sans Unicode", "Luxi Sans", "Lato", sans-serif, "Aerial";
-font-weight: bold;
-font-style: italic;
-line-height: 170%;
-margin: 0 0 0.1em 0;
+font-family: "OldNewspaperTypes", Cambria, Tinos, OpenDyslexic, "Lucida Sans", "Bitstream Vera Sans", "Arial Rounded MT Bold", Arbeka, "Lucida Grande", "Lucida Sans Unicode", "Luxi Sans", "Lato", sans-serif, "Aerial";
+line-height: 180%;
+margin: 0 0 3px 0;
 background: green;
 
 }
 
 .title {
-font-size: 200%;
-text-align: center;
-border: 2px solid black;
+font-size: 250%;
+text-align: left;
+margin: 5px;
+border: 3px solid black;
 border-radius: 10px;
 padding : 0.1em;
 box-shadow: 3px 3px 3px #aaa;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
+font-weight: 1000;
 }
 
+
+
 h1 {
-font-size: 150%;
+font-size: 180%;
 text-align: center;
 margin-top : 1em;
-border-bottom : 1px solid grey;
-background-color: black;
-color: green;
+border : 1px solid black;
+background-color: grey;
+color: black;
+font-weight: 1000;
 
 
 }
@@ -98,6 +111,15 @@ margin-top : 0.3em;
 content: ' ' ;
 color: black;
 }
+
+/* Sélectionne la première lettre */
+/* d'un élément <p> */
+p::first-letter {
+  font-size: 150%;
+  font-weight: bolder;
+}
+
+
 
 table {
 border-collapse: collapse;

@@ -20,10 +20,10 @@
 
 
 @font-face {
-  font-family: "OldNewspaperTypes";
+  font-family: OldNewspaperTypes;
   src:
-    local("OldNewspaperTypes"),
-    url("OldNewspaperTypes.ttf") format("truetype");
+    local(OldNewspaperTypes),
+    url(OldNewspaperTypes.ttf) format('truetype');
 }
 
 body {
@@ -40,7 +40,7 @@ margin: 1% 0;
 
 body, p, .warning, .inlinewarning {
 
-font-family: "OldNewspaperTypes", Cambria, Tinos, "Souvenir Lt Bt", Andika, "Amerigo BT", Century, "Bookman URW", "Bitstream Vera Serif", "Free Sans", Georgia, Serif, Aerial, "Times New Roman", "STSong", "PT Serif";
+font-family: OldNewspaperTypes, Cambria, Tinos, "Souvenir Lt Bt", Andika, "Amerigo BT", Century, "Bookman URW", "Bitstream Vera Serif", "Free Sans", Georgia, Serif, Aerial, "Times New Roman", "STSong", "PT Serif";
 line-height: 120%;
 }
 
@@ -49,8 +49,9 @@ margin : 0 20%;
 margin-bottom: 5px;
 text-indent: 0em;
 text-align: justify;
-column-count: 2;
-column-gap: 40px;
+#column-count: 2;
+#column-gap: 40px;
+font-family: OldNewspaperTypes;
 }
 
 sub, sup {
@@ -58,7 +59,7 @@ font-size: 70%;
 }
 
 h1, h2, h3, h4, h5, h6, .title {
-font-family: "OldNewspaperTypes", Cambria, Tinos, OpenDyslexic, "Lucida Sans", "Bitstream Vera Sans", "Arial Rounded MT Bold", Arbeka, "Lucida Grande", "Lucida Sans Unicode", "Luxi Sans", "Lato", sans-serif, "Aerial";
+font-family: OldNewspaperTypes, Cambria, Tinos, OpenDyslexic, "Lucida Sans", "Bitstream Vera Sans", "Arial Rounded MT Bold", Arbeka, "Lucida Grande", "Lucida Sans Unicode", "Luxi Sans", "Lato", sans-serif, "Aerial";
 line-height: 180%;
 margin: 0 0 3px 0;
 background: green;
@@ -66,40 +67,52 @@ background: green;
 }
 
 .title {
-font-size: 250%;
-text-align: left;
+font-size: 200%;
+text-align: center;
 margin: 5px;
+margin-left: 20%;
+margin-right: 20%;
 border: 3px solid black;
 border-radius: 10px;
 padding : 0.1em;
 box-shadow: 3px 3px 3px #aaa;
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 font-weight: 1000;
+font-family: OldNewspaperTypes;
 }
 
 
 
 h1 {
-font-size: 180%;
+font-size: 150%;
 text-align: center;
 margin-top : 1em;
 border : 1px solid black;
 background-color: grey;
 color: black;
 font-weight: 1000;
-
+font-family: OldNewspaperTypes;
+margin-left: 20%;
+margin-right: 20%;
 
 }
 
 h2 {
-font-size: 125%;
+font-size: 120%;
 margin-top : 0.5em;
-text-decoration: underline;
+margin-left: 20%;
+margin-right: 20%;
+text-align: center;
+background-color: grey;
+
 }
 
 h3 {
-font-size: 110%;
-margin-top : 0.4em;
+font-size: 100%;
+margin-left: 20%;
+margin-right: 20%;
+background-color: BlanchedAlmond;
+
 }
 
 h4, h5, h6 {
